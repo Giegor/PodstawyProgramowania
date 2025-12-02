@@ -1,3 +1,5 @@
+import random
+from math import inf
 #Zadanie 15.
 #a)
 #Można tak
@@ -26,9 +28,9 @@ for x in range(-30, 61):
         '''
 
 #Zadanie 16
-lista1 = list(range(3, 31, 3))
+'''lista1 = list(range(3, 31, 3))
 lista2 = list(range(11, 111, 11))
-lista3 = list(range(13, 131, 13))
+lista3 = list(range(13, 131, 13))'''
 
 #Sposób numbero uno
 '''for x, y, z in zip(lista1, lista2, lista3):
@@ -47,11 +49,39 @@ lista10 = [10, 56, 89, 59]'''
     print(i)
 '''
 #Zadanie 17.
-n = int(input('Podaj ile będzie liczb'))
+'''n = int(input('Podaj ile będzie liczb'))
 suma = 0
+max_liczba = -inf #minus nieskończoność
+min_liczba = inf
+liczby_mniejsze_od_3 = 0
+ile_przednail = 0
 
 for x in range(n):
     liczba = int(input('Podaj liczbę'))
     suma = suma + liczba
+    if liczba > max_liczba:
+        max_liczba = liczba
+    if liczba < min_liczba:
+        min_liczba = liczba
+    if liczba < 3:
+        liczby_mniejsze_od_3 += 1
+    if liczba > -2 and liczba <= 11:
+        ile_przednail += 1
 
 print(suma)
+print(suma / n)
+print(max_liczba)
+print(min_liczba)
+print(liczby_mniejsze_od_3)
+print(ile_przednail)'''
+
+n = int(input('Podaj ile będzie liczb'))
+
+lista = []
+for x in range(n):
+    liczba = int(input('Podaj liczbę'))
+    lista.append(liczba)
+print(sum(lista))
+print(sum(lista) / n)
+print(max(lista))
+print(min(lista))
