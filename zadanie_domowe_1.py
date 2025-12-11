@@ -9,7 +9,7 @@ else:
 
 
 
-a = float(input('Podaj liczbę a różną od 0: '))
+'''a = float(input('Podaj liczbę a różną od 0: '))
 b = float(input('Podaj liczbę b: '))
 c = float(input('Podaj liczbę c: '))
 
@@ -44,4 +44,32 @@ elif b != 0 and c != 0:
         print('Nie ma rozwiązań')
 
 else:
-    print('Nie ma rozwiązań')
+    print('Nie ma rozwiązań')'''
+
+
+'''n = 20
+wynik = 0
+while n >= 0:
+    n -= 1
+    if n % 2 == 1:
+        continue
+    wynik += n
+print(wynik)'''
+
+#Wynikiem poniższego kodu będzie 90, ponieważ:
+#Pętla na początku odejmuje od n 1 a następnie sprawdza czy liczba n jest nieparzysta, jeśli tak to pomija dalszą część pętli jeśli nie to do wyniku dodaje n
+#Na początku n - 1 = 19 więc pętla zaczyna się na nowo i do wyniku dodaje się  18
+#Później w podobny sposób do wyniku dadaje się 16, 14, 12, 10, 8, 6, 4, 2, 0
+#Suma tych wszystkich wartości wynosi 90
+#Dlatego wyprintowany wynik w konsoli to 90
+
+'''i = 10
+while i >= 1:
+    print(i)
+    i -= 1'''
+
+i = 10
+for j in range(i):
+    if i >= 1:
+        print(i)
+        i -= 1
