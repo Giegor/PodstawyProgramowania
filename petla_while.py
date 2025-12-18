@@ -9,6 +9,7 @@ while liczba > 0: #tak długo jak liczba jest dodatnia, pętla się wykonuje
     licznik += 1
 
 print(licznik)'''
+from asyncio import sleep
 
 #Zadanie 1.
 '''x = input('Podaj liczbę lub q aby zakończyć, przegrywie życiowy, matka cię nie kocha, a twój stary wolał iść po mleko niż ciebie znać (:\nProszę napisz tutaj liczbę misiaczku: ')
@@ -73,7 +74,7 @@ while liczba > 0:
 '''
 
 
-liczba = int(input('Co się lapmisz parówo dęta?! Ludzika z delmy nie widziałeś? A nie czekaj... Podaj liczbę: '))
+'''liczba = int(input('Co się lapmisz parówo dęta?! Ludzika z delmy nie widziałeś? A nie czekaj... Podaj liczbę: '))
 d = 2
 ile_czyn = 0
 ile_r_czyn = 0
@@ -86,4 +87,43 @@ while liczba > 1:
         ile_czyn += 1
     d += 1
 print(ile_czyn)
-print(ile_r_czyn)
+print(ile_r_czyn)'''
+
+#Zadanie 5.
+import random
+x, y = 0, 0
+ruchy = ['p'] * 10 + ['d'] * 5 + ['l'] * 5 + ['g'] * 10 + ['q']
+print(ruchy)
+
+while True:
+    # ruch = input('Podaj ruch')
+    ruch = ruchy[random.randint(0, len(ruchy) - 1)]
+    if ruch == 'q':
+        print('Koniec gry')
+        break
+
+    elif ruch == 'g':
+        if y < 9:
+            y += 1
+        else:
+            print('Ruch niemożliwy')
+
+    elif ruch == 'd':
+        if y > 0:
+            y -= 1
+        else:
+            print('Ruch niemożliwy')
+
+    elif ruch == 'p':
+        if x < 9:
+            x += 1
+        else:
+            print('Ruch niemożliwy')
+
+    elif ruch == 'l':
+        if x > 0:
+            x -= 1
+        else:
+            print('Ruch niemożliwy')
+
+    print(f'({x}, {y})')
