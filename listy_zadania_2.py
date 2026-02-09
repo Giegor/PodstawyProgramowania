@@ -11,3 +11,5 @@ print(lista_norm)'''
 lista = [123, 89, 5600, 432, 11, 45, 900, 12450, 1410, 390, 9999]
 '''lista = [x for x in lista if x < 1000 or x > 9999]'''
 lista = [x for x in lista if not (x >= 1000 and x <= 9999)]
+
+

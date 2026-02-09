@@ -65,3 +65,4 @@ for i in range(len(plansza)):
                 if srodkowy < czerwony:
                     licznik += 1
         print(i, j, licznik)
+
