@@ -3,3 +3,27 @@ print(zbior)
 
 zbior2 = {'kot', 'gołąb', 'gołąb', 'kot', 'pies'}
 print(len(zbior2))
+
+A = set(range(0, 20, 2)) #{0, 2, 4, 6, 8, 10, 12, 14, 16, 18}
+B = {1, 2, 3, 4, 6, 12}
+
+#Suma szbiorów
+suma_A_B = A.union(B)
+print(suma_A_B)
+
+suma_A_B2 = set(list(A) +  list(B))
+print(suma_A_B2)
+
+#Część wspólna
+iloczyn_A_B = A.intersection(B) #{0, 2, 4, 8, 10, 12, 14, 16, 18} n {1, 2, 3, 4, 6, 12}
+print(iloczyn_A_B)
+
+#Różnica
+roznica_A_B = A.difference(B)
+print(roznica_A_B)
+
+#Dodawanie elementów do zbioru
+C = {1, 7, 4, 5}
+C.add(2)
+print(C)
+
