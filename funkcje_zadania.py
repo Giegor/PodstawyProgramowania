@@ -1,6 +1,6 @@
 #Zadanie 0.3.
 #a)
-def suma_v(u, v):
+'''def suma_v(u, v):
     w = []
     for i in range(len(u)):
         suma = u[i] + v[i]
@@ -13,10 +13,29 @@ v = [-1, 0, 4]
 wynik = suma_v(u, v)
 
 print(wynik)
+'''
+#Zadanie 2.1.
+# def czy_anagramy(s1, s2):
+#   '''if sorted(s1) == sorted(s2):
+#          return True
+#     else:
+#         return False'''
+#   return sorted(s1) == sorted(s2)
+#
+#     #print(czy_anagramy('nosek', 'keson'))
+# '''    s1 = 'nosek'
+#     s2 = 'kseon'
+# print(sorted(s1) == sorted(s2))'''
 
-#b)
-def iloczyn(u, v):
+def jaki_trojkat(a, b, c):
+  if a + b + c > 2 * max([a, b, c]):
+    if a ** 2 + b ** 2 + c ** 2 == 2 * max([a, b, c]):
+      print('prostokątny')
+    elif a ** 2 + b ** 2 + c ** 2 > 2 * max([a, b, c]):
+      print('ostrokątny')
+    elif a ** 2 + b ** 2 + c ** 2 < 2 * max([a, b, c]):
+      print('rozwartokątny')
+  else:
+    print('To nie jest trójkąt')
 
-
-wynik = iloczyn(u, v)
-print(wynik)
+jaki_trojkat(7, 10, 16)
