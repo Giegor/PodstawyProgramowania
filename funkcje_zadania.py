@@ -15,17 +15,17 @@ wynik = suma_v(u, v)
 print(wynik)
 '''
 #Zadanie 2.1.
-# def czy_anagramy(s1, s2):
-#   '''if sorted(s1) == sorted(s2):
-#          return True
-#     else:
-#         return False'''
-#   return sorted(s1) == sorted(s2)
-#
-#     #print(czy_anagramy('nosek', 'keson'))
-# '''    s1 = 'nosek'
-#     s2 = 'kseon'
-# print(sorted(s1) == sorted(s2))'''
+def czy_anagramy(s1, s2):
+  '''if sorted(s1) == sorted(s2):
+         return True
+    else:
+        return False'''
+  return sorted(s1) == sorted(s2)
+
+    #print(czy_anagramy('nosek', 'keson'))
+'''    s1 = 'nosek'
+    s2 = 'kseon'
+print(sorted(s1) == sorted(s2))'''
 
 def jaki_trojkat(a, b, c):
   if a + b + c > 2 * max([a, b, c]):
@@ -38,4 +38,18 @@ def jaki_trojkat(a, b, c):
   else:
     print('To nie jest trójkąt')
 
-jaki_trojkat(7, 10, 16)
+
+def liczby_niezalezne(lista):
+  wynik = []
+  for e in lista:
+    dzielniki = []
+    for l in lista:
+      if e % l == 0:
+        dzielniki.append(l)
+    if len (dzielniki) == 1:
+      wynik.append(e)
+  return wynik
+print(liczby_niezalezne([12, 7, 3, 6, 21, 74]))
+
+#2.4, 2.5, 2.6, 2.7, 2.8
+#do domu imbecyłu ty !!!!!!!!!!!!
